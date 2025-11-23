@@ -77,7 +77,7 @@ export default function Home() {
               At the frontlines of information technology,
             </p>
             <p className="text-2xl md:text-3xl text-blue-600 max-w-4xl mb-12 leading-relaxed font-medium">
-              building a free internet in the interest of a free people
+              building a free internet for a free people
             </p>
             
             <div className="flex flex-wrap gap-4 justify-center mb-12">
@@ -300,7 +300,7 @@ export default function Home() {
                 <h4 className="text-white font-bold">Subzero Research</h4>
               </div>
               <p className="text-sm">
-                At the frontlines of information technology, building a free internet in the interest of a free people.
+                At the frontlines of information technology, building a free internet for a free people.
               </p>
             </div>
             <div>
