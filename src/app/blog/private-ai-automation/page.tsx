@@ -1457,7 +1457,7 @@ data:
           </ul>
 
           <p className="text-lg text-slate-700 leading-relaxed mb-6">
-            At SubZero Research, we help organizations design, deploy, and optimize private AI infrastructure for healthcare, 
+            At Subzero Research, we help organizations design, deploy, and optimize private AI infrastructure for healthcare, 
             finance, and government applications. Our expertise spans distributed systems, GPU optimization, and regulatory compliance.
           </p>
 

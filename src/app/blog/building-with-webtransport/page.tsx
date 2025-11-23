@@ -422,7 +422,7 @@ class GameStateSync {
           <p className="text-lg text-slate-700 leading-relaxed mb-6">
             WebTransport represents the future of web networking, offering performance and flexibility that 
             surpasses previous technologies. While browser support is still maturing, early adoption positions 
-            your applications to take advantage of this powerful protocol. At SubZero Research, we're actively 
+            your applications to take advantage of this powerful protocol. At Subzero Research, we're actively 
             contributing to the ecosystem through our work on libp2p-webtransport-sys and helping organizations 
             implement WebTransport in production systems.
           </p>

@@ -305,7 +305,7 @@ export default function HistoryOfWebTransport() {
             The web platform has caught up to, and in some ways surpassed, what's possible with traditional client-server architectures.
           </p>
           <p className="text-lg text-slate-700 leading-relaxed mb-6">
-            At SubZero Research, we're excited to be part of this transformation. Our work on libp2p-webtransport-sys helps bring these 
+            At Subzero Research, we're excited to be part of this transformation. Our work on libp2p-webtransport-sys helps bring these 
             powerful capabilities to the Rust ecosystem, enabling developers to build the next generation of distributed applications.
           </p>
 
