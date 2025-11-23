@@ -7,6 +7,7 @@ import GitHubPreview from "@/components/GitHubPreview"
 import SubzeroLogo from "@/components/SubzeroLogo"
 import P2PNetworkSVG from "@/components/P2PNetworkSVG"
 import DistributedSystemSVG from "@/components/DistributedSystemSVG"
+import ConsensusFrameworkSVG from "@/components/ConsensusFrameworkSVG"
 
 const teamMembers = [
   { name: "Raymond Pulver", title: "Founder", description: "Expert in distributed systems and p2p networks." },
@@ -166,6 +167,59 @@ export default function Home() {
             {/* Visual representation */}
             <div className="flex items-center justify-center bg-gradient-to-br from-slate-50 to-white rounded-xl shadow-lg border border-slate-200 p-8">
               <DistributedSystemSVG className="w-full h-full" />
+            </div>
+          </div>
+
+          {/* Featured Research */}
+          <div className="mb-16">
+            <h3 className="text-3xl font-bold text-slate-900 mb-6 text-center">Featured Research</h3>
+            <div className="bg-gradient-to-br from-purple-50 via-blue-50 to-white rounded-xl shadow-xl border-2 border-purple-200 p-8">
+              <div className="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+                      <svg className="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                      </svg>
+                    </div>
+                    <h4 className="text-2xl font-bold text-slate-900">Automated Consensus Frameworks</h4>
+                  </div>
+                  <p className="text-lg text-slate-700 mb-4 leading-relaxed">
+                    Our flagship research focuses on building automated consensus mechanisms over UDP-based 
+                    peer-to-peer networks. We're developing next-generation protocols that achieve Byzantine 
+                    fault tolerance with significantly lower latency than traditional TCP-based systems.
+                  </p>
+                  <div className="space-y-2 text-slate-600">
+                    <div className="flex items-start gap-2">
+                      <svg className="w-5 h-5 text-purple-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span><strong>Sub-50ms consensus latency</strong> for global networks</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <svg className="w-5 h-5 text-purple-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span><strong>Automatic failure detection</strong> and network healing</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <svg className="w-5 h-5 text-purple-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span><strong>Dynamic scaling</strong> from 3 to 1000+ nodes</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <svg className="w-5 h-5 text-purple-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span><strong>Integrated with libp2p</strong> for real-world deployment</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex items-center justify-center">
+                  <ConsensusFrameworkSVG className="w-full h-80" />
+                </div>
+              </div>
             </div>
           </div>
 
