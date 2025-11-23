@@ -13,7 +13,7 @@ export default function PayInvoice() {
   const [cvv, setCvv] = useState("")
   const [cardName, setCardName] = useState("")
   const [isProcessing, setIsProcessing] = useState(false)
-  const [showSuccess, setShowSuccess] = useState(false)
+  const [showError, setShowError] = useState(false)
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
@@ -22,19 +22,12 @@ export default function PayInvoice() {
     // Simulate payment processing
     setTimeout(() => {
       setIsProcessing(false)
-      setShowSuccess(true)
-      
-      // Reset form after showing success
-      setTimeout(() => {
-        setShowSuccess(false)
-        setInvoiceNumber("")
-        setAmount("")
-        setCardNumber("")
-        setExpiryDate("")
-        setCvv("")
-        setCardName("")
-      }, 3000)
-    }, 2000)
+      setShowError(true)
+    }, 1500)
+  }
+
+  const handleCloseError = () => {
+    setShowError(false)
   }
 
   return (
@@ -56,27 +49,42 @@ export default function PayInvoice() {
           </Link>
 
           {/* Payment Form Card */}
+          {/* Error Modal */}
+          {showError && (
+            <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+              <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-8 animate-in fade-in duration-300">
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg className="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <h2 className="text-2xl font-bold text-slate-900 mb-3">Payment Processing Unavailable</h2>
+                  <p className="text-slate-600 mb-6">
+                    We are currently pending integration with our payment processor. Please try again in approximately one week.
+                  </p>
+                  <p className="text-sm text-slate-500 mb-6">
+                    If you need to make an urgent payment, please contact us at{" "}
+                    <a href="mailto:billing@subzeroresearch.com" className="text-blue-600 hover:text-blue-700 underline">
+                      billing@subzeroresearch.com
+                    </a>
+                  </p>
+                  <button
+                    onClick={handleCloseError}
+                    className="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          )}
+
           <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-white/50">
             <div className="text-center mb-8">
               <h1 className="text-4xl font-bold text-blue-900 mb-2">Pay Invoice</h1>
               <p className="text-gray-600">Enter your invoice details to make a payment</p>
-              <div className="mt-4 px-4 py-2 bg-yellow-100 border border-yellow-400 rounded-lg">
-                <p className="text-sm text-yellow-800">
-                  <strong>Demo Mode:</strong> This is a UX demonstration. No actual payment will be processed.
-                </p>
-              </div>
             </div>
-
-            {showSuccess && (
-              <div className="mb-6 p-4 bg-green-100 border border-green-400 rounded-lg animate-pulse">
-                <div className="flex items-center gap-2">
-                  <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <p className="text-green-800 font-semibold">Payment Successful! (Demo)</p>
-                </div>
-              </div>
-            )}
 
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* Invoice Details */}
