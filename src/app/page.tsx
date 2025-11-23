@@ -378,7 +378,7 @@ export default function Home() {
             </div>
           </div>
           <div className="border-t border-slate-800 pt-8 text-center text-sm">
-            <p className="mb-2">© {new Date().getFullYear()} Subzero Research Inc. All rights reserved.</p>
+            <p className="mb-2">© 2025 Subzero Research Inc. All rights reserved.</p>
             <p>A Delaware C Corporation</p>
           </div>
         </div>

@@ -1,0 +1,9 @@
+# robots.txt for Subzero Research Inc
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://subzeroresearch.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
