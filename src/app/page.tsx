@@ -78,7 +78,6 @@ export default function Home() {
             <Link href="#stack" className="text-slate-700 hover:text-slate-900 font-medium transition-colors">Stack</Link>
             <Link href="#research" className="text-slate-700 hover:text-slate-900 font-medium transition-colors">Research</Link>
             <Link href="#blog" className="text-slate-700 hover:text-slate-900 font-medium transition-colors">Blog</Link>
-            <Link href="/pay-invoice" className="text-slate-700 hover:text-slate-900 font-medium transition-colors">Pay Invoice</Link>
           </div>
         </nav>
 
