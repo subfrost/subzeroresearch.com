@@ -12,6 +12,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1.0,
     },
     {
+      url: `${baseUrl}/blog/l3-abstractions-agentic-prediction-markets`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/blog/building-with-webtransport`,
       lastModified: currentDate,
       changeFrequency: 'monthly',

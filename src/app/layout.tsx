@@ -14,12 +14,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Subzero Research Inc | Building a Free Internet for a Free People",
-  description: "Subzero Research is a Delaware C Corporation specializing in automated consensus frameworks, UDP-based P2P networks, distributed systems, and privacy-first AI infrastructure for sensitive applications.",
+  title: "Subzero Research Inc | First-Generation Synthetic Researchers",
+  description: "Subzero Research is pioneering synthetic research methodologies using high-volume compute and frontier AI. We're building a complete user space IP stack with quantum-safe streams, cryptographic identity, and ACLs to replace the modern internet.",
   keywords: [
+    "synthetic research",
+    "AI research",
     "distributed systems",
     "P2P networks",
     "peer-to-peer",
+    "user space IP stack",
+    "quantum-safe cryptography",
+    "post-quantum",
     "consensus frameworks",
     "UDP protocol",
     "rust-libp2p",
@@ -27,11 +32,16 @@ export const metadata: Metadata = {
     "QUIC",
     "HTTP/3",
     "private AI",
-    "HIPAA compliant",
-    "blockchain",
+    "network protocols",
     "decentralized networks",
     "Byzantine fault tolerance",
-    "libp2p-webtransport-sys"
+    "libp2p-webtransport-sys",
+    "subtun",
+    "subp2p",
+    "Noise protocol",
+    "cryptographic identity",
+    "ACL",
+    "TUN device"
   ],
   authors: [{ name: "Subzero Research Inc" }],
   creator: "Subzero Research Inc",
@@ -44,22 +54,22 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://subzeroresearch.com",
-    title: "Subzero Research Inc | Building a Free Internet for a Free People",
-    description: "At the frontlines of information technology, building automated consensus frameworks over UDP-based P2P networks and privacy-first AI infrastructure.",
+    title: "Subzero Research Inc | First-Generation Synthetic Researchers",
+    description: "We harness high-volume compute and frontier AI to conduct autonomous research at unprecedented scale, building the complete user space IP stack that will replace the modern internet.",
     siteName: "Subzero Research Inc",
     images: [
       {
         url: "/icon.svg",
         width: 1200,
         height: 1200,
-        alt: "Subzero Research - Distributed Systems and P2P Networks",
+        alt: "Subzero Research - Synthetic Research & Next-Generation Network Protocols",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Subzero Research Inc | Building a Free Internet for a Free People",
-    description: "Automated consensus frameworks, UDP-based P2P networks, and privacy-first AI infrastructure.",
+    title: "Subzero Research Inc | First-Generation Synthetic Researchers",
+    description: "Breaking the limits of network protocol R&D with AI-augmented research pipelines. Building quantum-safe, identity-first networking.",
     images: ["/icon.svg"],
   },
   robots: {

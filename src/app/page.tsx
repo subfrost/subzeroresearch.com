@@ -10,23 +10,23 @@ import DistributedSystemSVG from "@/components/DistributedSystemSVG"
 import ConsensusFrameworkSVG from "@/components/ConsensusFrameworkSVG"
 
 const teamMembers = [
-  { name: "Raymond Pulver", title: "Founder", description: "Expert in distributed systems and p2p networks." },
-  { name: "Gabe Lee", title: "Founder", description: "Specialist in infrastructure and system architecture." },
+  { name: "Raymond Pulver", title: "Founder", description: "Expert in distributed systems and p2p networks. Pioneering synthetic research methodologies." },
+  { name: "Gabe Lee", title: "Founder", description: "Specialist in infrastructure and system architecture. AI-augmented protocol design." },
   { name: "Ehran", title: "Partner", description: "Strategic advisor with extensive experience in technology ventures." },
   { name: "Allen", title: "Partner", description: "Technology leader with deep expertise in web3 and distributed systems." },
 ]
 
 const blogPosts = [
   {
+    title: "L3 Abstractions for Agentic Prediction Markets",
+    excerpt: "Building zero-attack-surface mesh consensus with local GPU inference and HTTP/3 transport for distributed, unbiased resolution of conditional markets.",
+    href: "/blog/l3-abstractions-agentic-prediction-markets",
+    date: "2024-12-09"
+  },
+  {
     title: "Building with WebTransport",
     excerpt: "A comprehensive guide to implementing WebTransport in modern applications, exploring its advantages over traditional protocols.",
     href: "/blog/building-with-webtransport",
-    date: "2024-11-23"
-  },
-  {
-    title: "History of WebTransport, QUIC, and HTTP/3",
-    excerpt: "Tracing the evolution of modern web protocols from HTTP/1 to HTTP/3, and understanding the revolutionary impact of QUIC.",
-    href: "/blog/history-of-webtransport",
     date: "2024-11-23"
   },
   {
@@ -37,8 +37,27 @@ const blogPosts = [
   }
 ]
 
+const techStack = [
+  {
+    name: "subtun",
+    description: "Layer-3 VPN tunnel bridging TCP/IP with P2P streams",
+    features: ["TUN device management", "DNS interception", "Port-based ACLs", "Cross-platform routing"]
+  },
+  {
+    name: "subp2p",
+    description: "Generic libp2p networking with multi-transport support",
+    features: ["Circuit Relay v2", "Kademlia DHT", "GossipSub messaging", "NAT traversal"]
+  },
+  {
+    name: "libp2p-webtransport-sys",
+    description: "Pure Rust WebTransport for browser-native P2P",
+    features: ["QUIC + HTTP/3", "Certificate pinning", "Noise encryption", "Zero dependencies on C"]
+  }
+]
+
 export default function Home() {
   const aboutSectionRef = useRef<HTMLElement | null>(null)
+  const syntheticResearchRef = useRef<HTMLElement | null>(null)
 
   const handleScrollDown = () => {
     aboutSectionRef.current?.scrollIntoView({ behavior: "smooth" })
@@ -57,7 +76,8 @@ export default function Home() {
             <div className="text-2xl font-bold text-slate-900">Subzero Research</div>
           </div>
           <div className="flex gap-6">
-            <Link href="#research" className="text-slate-700 hover:text-slate-900 font-medium transition-colors">Research</Link>
+            <Link href="#synthetic-research" className="text-slate-700 hover:text-slate-900 font-medium transition-colors">Synthetic Research</Link>
+            <Link href="#research" className="text-slate-700 hover:text-slate-900 font-medium transition-colors">Technology</Link>
             <Link href="#blog" className="text-slate-700 hover:text-slate-900 font-medium transition-colors">Blog</Link>
             <Link href="/pay-invoice" className="text-slate-700 hover:text-slate-900 font-medium transition-colors">Pay Invoice</Link>
           </div>
@@ -75,24 +95,28 @@ export default function Home() {
             </h1>
 
             <p className="text-2xl md:text-3xl text-slate-700 max-w-4xl mb-4 leading-relaxed font-medium">
-              At the frontlines of information technology,
+              First-generation synthetic researchers
             </p>
-            <p className="text-2xl md:text-3xl text-blue-600 max-w-4xl mb-12 leading-relaxed font-medium">
-              building a free internet for a free people
+            <p className="text-2xl md:text-3xl text-blue-600 max-w-4xl mb-6 leading-relaxed font-medium">
+              breaking the limits of network protocol R&D
             </p>
-            
+            <p className="text-lg md:text-xl text-slate-600 max-w-3xl mb-12 leading-relaxed">
+              We harness high-volume compute and frontier AI to conduct autonomous research at unprecedented scale,
+              building the complete user space IP stack that will replace the modern internet.
+            </p>
+
             <div className="flex flex-wrap gap-4 justify-center mb-12">
               <button
                 onClick={handleScrollDown}
                 className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-all hover:shadow-lg"
               >
-                Explore Our Work
+                Explore Our Research
               </button>
               <Link
-                href="#blog"
+                href="#synthetic-research"
                 className="px-8 py-4 bg-white hover:bg-slate-50 text-slate-900 font-semibold rounded-lg transition-all hover:shadow-lg border-2 border-slate-200"
               >
-                Read Research
+                Synthetic Research Thesis
               </Link>
             </div>
 
@@ -114,11 +138,296 @@ export default function Home() {
         </button>
       </section>
 
+      {/* Synthetic Research Thesis Section */}
+      <section
+        id="synthetic-research"
+        ref={syntheticResearchRef}
+        className="relative bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 py-24 px-4"
+      >
+        <div className="max-w-7xl mx-auto relative z-10">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-500/20 border border-blue-400/30 rounded-full text-blue-300 text-sm font-medium mb-6">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+              The Future of Research is Synthetic
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              Synthetic Research: Our Thesis
+            </h2>
+            <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
+              We are among the first generation of synthetic researchers&mdash;teams that leverage frontier AI
+              systems and massive compute to conduct research at speeds and scales previously impossible.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 mb-16">
+            {/* The Paradigm Shift */}
+            <div className="bg-slate-800/50 border border-slate-700 rounded-2xl p-8">
+              <div className="w-14 h-14 bg-gradient-to-br from-purple-500 to-blue-600 rounded-xl flex items-center justify-center mb-6">
+                <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-4">The Paradigm Shift</h3>
+              <p className="text-slate-300 mb-6 leading-relaxed">
+                The automation of AI research itself creates a self-accelerating cycle. When AI systems can
+                meaningfully contribute to their own development and to fundamental research, progress becomes
+                exponential rather than linear.
+              </p>
+              <p className="text-slate-300 leading-relaxed">
+                We recognized this inflection point early. Rather than waiting for synthetic research to become
+                mainstream, we built the infrastructure to be among the first practitioners&mdash;applying
+                AI-augmented methodologies to advance network protocols for the post-quantum era.
+              </p>
+            </div>
+
+            {/* Our Approach */}
+            <div className="bg-slate-800/50 border border-slate-700 rounded-2xl p-8">
+              <div className="w-14 h-14 bg-gradient-to-br from-cyan-500 to-teal-600 rounded-xl flex items-center justify-center mb-6">
+                <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-4">High-Volume Compute Research</h3>
+              <p className="text-slate-300 mb-6 leading-relaxed">
+                We deploy significant compute resources to run AI-assisted research pipelines. Our systems
+                explore solution spaces, synthesize novel protocol designs, verify cryptographic properties,
+                and generate implementation code&mdash;compressing years of traditional R&D into months.
+              </p>
+              <div className="space-y-3">
+                <div className="flex items-center gap-3 text-slate-300">
+                  <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
+                  <span>Frontier AI models for protocol design exploration</span>
+                </div>
+                <div className="flex items-center gap-3 text-slate-300">
+                  <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
+                  <span>Automated formal verification of security properties</span>
+                </div>
+                <div className="flex items-center gap-3 text-slate-300">
+                  <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
+                  <span>Synthetic data generation for edge case testing</span>
+                </div>
+                <div className="flex items-center gap-3 text-slate-300">
+                  <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
+                  <span>AI-generated implementations validated by humans</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* What We're Building */}
+          <div className="bg-gradient-to-r from-blue-600/20 via-purple-600/20 to-cyan-600/20 border border-blue-500/30 rounded-2xl p-8 md:p-12">
+            <div className="text-center mb-8">
+              <h3 className="text-3xl font-bold text-white mb-4">What We're Building</h3>
+              <p className="text-xl text-slate-300 max-w-3xl mx-auto">
+                A complete user space IP stack designed to replace the modern internet's architecture
+              </p>
+            </div>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="text-center">
+                <div className="text-4xl font-bold text-blue-400 mb-2">Identity-First</div>
+                <p className="text-slate-400">
+                  Cryptographic identity at the network layer, not bolted on. Every connection authenticated, every packet attributable.
+                </p>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl font-bold text-purple-400 mb-2">Quantum-Safe</div>
+                <p className="text-slate-400">
+                  Post-quantum cryptographic primitives integrated from the ground up. Ready for the cryptographic transition.
+                </p>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl font-bold text-cyan-400 mb-2">User Space</div>
+                <p className="text-slate-400">
+                  Complete IP stack running in user space. No kernel modifications, deployable anywhere, compatible with existing software.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Technical Stack Section */}
+      <section className="relative bg-white py-20 px-4">
+        <FrostBackdrop reducedOpacity />
+        <div className="max-w-7xl mx-auto relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
+              The Subfrost Stack
+            </h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              A layered architecture replacing the traditional internet stack with decentralized,
+              encrypted, identity-aware networking.
+            </p>
+          </div>
+
+          {/* Architecture Diagram */}
+          <div className="bg-gradient-to-br from-slate-50 to-blue-50 rounded-2xl border-2 border-slate-200 p-8 mb-12">
+            <div className="grid gap-4 max-w-4xl mx-auto">
+              {/* Layer 4: Applications */}
+              <div className="bg-white rounded-xl border border-slate-200 p-6 shadow-sm">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <div className="text-xs font-bold text-slate-500 uppercase tracking-wide mb-1">Layer 4</div>
+                    <div className="text-xl font-bold text-slate-900">Applications</div>
+                    <p className="text-slate-600 text-sm">curl, ethereum nodes, any TCP/IP software</p>
+                  </div>
+                  <div className="text-slate-400">
+                    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex justify-center">
+                <svg className="w-6 h-6 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+              </div>
+
+              {/* Layer 3: SubTun */}
+              <div className="bg-gradient-to-r from-purple-50 to-purple-100 rounded-xl border-2 border-purple-300 p-6 shadow-md">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <div className="text-xs font-bold text-purple-600 uppercase tracking-wide mb-1">Layer 3 &mdash; subtun</div>
+                    <div className="text-xl font-bold text-slate-900">User Space IP Stack</div>
+                    <p className="text-slate-600 text-sm">TUN device, DNS interception, TCP/UDP/ICMP routing, ACLs</p>
+                  </div>
+                  <div className="flex gap-2">
+                    <span className="px-2 py-1 bg-purple-200 text-purple-700 text-xs font-medium rounded">IPv4/IPv6</span>
+                    <span className="px-2 py-1 bg-purple-200 text-purple-700 text-xs font-medium rounded">smoltcp</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex justify-center">
+                <svg className="w-6 h-6 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+              </div>
+
+              {/* Layer 2: SubP2P */}
+              <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-xl border-2 border-blue-300 p-6 shadow-md">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <div className="text-xs font-bold text-blue-600 uppercase tracking-wide mb-1">Layer 2 &mdash; subp2p</div>
+                    <div className="text-xl font-bold text-slate-900">P2P Networking Layer</div>
+                    <p className="text-slate-600 text-sm">Kademlia DHT, GossipSub, Circuit Relay v2, DCUtR hole punching</p>
+                  </div>
+                  <div className="flex gap-2">
+                    <span className="px-2 py-1 bg-blue-200 text-blue-700 text-xs font-medium rounded">libp2p</span>
+                    <span className="px-2 py-1 bg-blue-200 text-blue-700 text-xs font-medium rounded">Ed25519</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex justify-center">
+                <svg className="w-6 h-6 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+              </div>
+
+              {/* Layer 1: Transport */}
+              <div className="bg-gradient-to-r from-cyan-50 to-cyan-100 rounded-xl border-2 border-cyan-300 p-6 shadow-md">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <div className="text-xs font-bold text-cyan-600 uppercase tracking-wide mb-1">Layer 1 &mdash; libp2p-webtransport-sys</div>
+                    <div className="text-xl font-bold text-slate-900">Encrypted Transport</div>
+                    <p className="text-slate-600 text-sm">WebTransport, QUIC, TCP, WebSocket, Noise protocol encryption</p>
+                  </div>
+                  <div className="flex gap-2">
+                    <span className="px-2 py-1 bg-cyan-200 text-cyan-700 text-xs font-medium rounded">QUIC</span>
+                    <span className="px-2 py-1 bg-cyan-200 text-cyan-700 text-xs font-medium rounded">rustls</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Crate Details */}
+          <div className="grid md:grid-cols-3 gap-6 mb-16">
+            {techStack.map((crate, index) => (
+              <div key={index} className="bg-white rounded-xl shadow-lg border border-slate-200 p-6 hover:shadow-xl transition-shadow">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center">
+                    <svg className="w-5 h-5 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                    </svg>
+                  </div>
+                  <code className="text-lg font-bold text-slate-900">{crate.name}</code>
+                </div>
+                <p className="text-slate-600 mb-4">{crate.description}</p>
+                <ul className="space-y-2">
+                  {crate.features.map((feature, i) => (
+                    <li key={i} className="flex items-center gap-2 text-sm text-slate-600">
+                      <svg className="w-4 h-4 text-blue-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+
+          {/* Key Capabilities */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+            <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl border border-green-200 p-6">
+              <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+              <h4 className="text-lg font-bold text-slate-900 mb-2">Quantum-Safe Streams</h4>
+              <p className="text-slate-600 text-sm">
+                Noise protocol with forward secrecy. AWS-LC cryptographic backend. Ready for post-quantum key exchange.
+              </p>
+            </div>
+            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl border border-blue-200 p-6">
+              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2" />
+                </svg>
+              </div>
+              <h4 className="text-lg font-bold text-slate-900 mb-2">Cryptographic Identity</h4>
+              <p className="text-slate-600 text-sm">
+                Ed25519 keypairs as network identity. Name registration on relay. Every connection authenticated.
+              </p>
+            </div>
+            <div className="bg-gradient-to-br from-purple-50 to-fuchsia-50 rounded-xl border border-purple-200 p-6">
+              <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                </svg>
+              </div>
+              <h4 className="text-lg font-bold text-slate-900 mb-2">Port-Based ACLs</h4>
+              <p className="text-slate-600 text-sm">
+                Whitelist-only port forwarding. Explicit access control at the network layer. Defense in depth.
+              </p>
+            </div>
+            <div className="bg-gradient-to-br from-orange-50 to-amber-50 rounded-xl border border-orange-200 p-6">
+              <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <h4 className="text-lg font-bold text-slate-900 mb-2">Existing Software Compatible</h4>
+              <p className="text-slate-600 text-sm">
+                Standard TCP/IP sockets and DNS. Any application works unchanged. curl, databases, blockchain nodes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Research & Projects Section */}
       <section
         id="research"
         ref={aboutSectionRef}
-        className="relative bg-white py-20 px-4"
+        className="relative bg-gradient-to-b from-slate-50 to-white py-20 px-4"
       >
         <FrostBackdrop reducedOpacity />
         <div className="max-w-7xl mx-auto relative z-10">
@@ -127,13 +436,13 @@ export default function Home() {
               Research & Open Source
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              We contribute to critical infrastructure projects and advance the state of distributed systems research.
+              We contribute to critical infrastructure projects and advance the state of distributed systems research through synthetic methodologies.
             </p>
           </div>
 
           {/* GitHub Project Preview */}
           <div className="mb-16">
-            <GitHubPreview 
+            <GitHubPreview
               repo="subfrost/libp2p-webtransport-sys"
               description="Rust bindings for libp2p WebTransport, enabling modern P2P networking with QUIC and HTTP/3"
             />
@@ -145,8 +454,8 @@ export default function Home() {
               <h3 className="text-2xl font-bold text-slate-900 mb-6">About Subzero Research</h3>
               <div className="space-y-4 text-lg text-slate-700">
                 <p>
-                  Subzero Research is a Delaware C Corporation specializing in peer-to-peer systems, 
-                  distributed computing, and privacy-focused AI infrastructure for sensitive applications.
+                  Subzero Research is a Delaware C Corporation pioneering synthetic research methodologies
+                  for peer-to-peer systems, distributed computing, and privacy-focused AI infrastructure.
                 </p>
                 <p>
                   As active contributors to <strong>rust-libp2p</strong> and maintainers of{" "}
@@ -158,12 +467,12 @@ export default function Home() {
                   >
                     libp2p-webtransport-sys
                   </a>
-                  , we advance decentralized networking technology and help organizations build 
-                  resilient, privacy-preserving infrastructure.
+                  , we advance decentralized networking technology using AI-augmented research pipelines
+                  that compress years of traditional R&D.
                 </p>
               </div>
             </div>
-            
+
             {/* Visual representation */}
             <div className="flex items-center justify-center bg-gradient-to-br from-slate-50 to-white rounded-xl shadow-lg border border-slate-200 p-8">
               <DistributedSystemSVG className="w-full h-full" />
@@ -185,8 +494,8 @@ export default function Home() {
                     <h4 className="text-2xl font-bold text-slate-900">Automated Consensus Frameworks</h4>
                   </div>
                   <p className="text-lg text-slate-700 mb-4 leading-relaxed">
-                    Our flagship research focuses on building automated consensus mechanisms over UDP-based 
-                    peer-to-peer networks. We're developing next-generation protocols that achieve Byzantine 
+                    Our flagship research focuses on building automated consensus mechanisms over UDP-based
+                    peer-to-peer networks. We're developing next-generation protocols that achieve Byzantine
                     fault tolerance with significantly lower latency than traditional TCP-based systems.
                   </p>
                   <div className="space-y-2 text-slate-600">
@@ -228,12 +537,24 @@ export default function Home() {
             <div className="bg-gradient-to-br from-white to-blue-50 rounded-xl shadow-lg border border-slate-200 p-6 hover:shadow-xl transition-shadow">
               <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                </svg>
+              </div>
+              <h4 className="text-xl font-bold text-slate-900 mb-3">Synthetic Research Infrastructure</h4>
+              <p className="text-slate-600">
+                Deploy AI-augmented research pipelines for your organization. We build custom infrastructure
+                that leverages frontier models and high-volume compute to accelerate R&D cycles.
+              </p>
+            </div>
+            <div className="bg-gradient-to-br from-white to-blue-50 rounded-xl shadow-lg border border-slate-200 p-6 hover:shadow-xl transition-shadow">
+              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
               </div>
               <h4 className="text-xl font-bold text-slate-900 mb-3">Private AI Integration</h4>
               <p className="text-slate-600">
-                Deploy privacy-preserving AI solutions for sensitive applications. We specialize in 
+                Deploy privacy-preserving AI solutions for sensitive applications. We specialize in
                 on-premises and HIPAA-compliant infrastructure for healthcare and regulated industries.
               </p>
             </div>
@@ -245,20 +566,8 @@ export default function Home() {
               </div>
               <h4 className="text-xl font-bold text-slate-900 mb-3">Distributed Systems</h4>
               <p className="text-slate-600">
-                Build resilient P2P networks and distributed infrastructure. From protocol design 
+                Build resilient P2P networks and distributed infrastructure. From protocol design
                 to implementation, we bring deep expertise in decentralized architectures.
-              </p>
-            </div>
-            <div className="bg-gradient-to-br from-white to-blue-50 rounded-xl shadow-lg border border-slate-200 p-6 hover:shadow-xl transition-shadow">
-              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-                </svg>
-              </div>
-              <h4 className="text-xl font-bold text-slate-900 mb-3">Research & Development</h4>
-              <p className="text-slate-600">
-                Advance the state of the art in networking protocols. We contribute to rust-libp2p 
-                and develop cutting-edge WebTransport implementations.
               </p>
             </div>
             <div className="bg-gradient-to-br from-white to-blue-50 rounded-xl shadow-lg border border-slate-200 p-6 hover:shadow-xl transition-shadow">
@@ -269,7 +578,7 @@ export default function Home() {
               </div>
               <h4 className="text-xl font-bold text-slate-900 mb-3">Consulting Services</h4>
               <p className="text-slate-600">
-                Work with contractors to sensitive US companies including medicaid systems. 
+                Work with contractors to sensitive US companies including medicaid systems.
                 We provide architecture review, implementation support, and security audits.
               </p>
             </div>
@@ -298,7 +607,7 @@ export default function Home() {
       </section>
 
       {/* Blog Section */}
-      <section id="blog" className="relative bg-gradient-to-b from-slate-50 to-white py-20 px-4">
+      <section id="blog" className="relative bg-white py-20 px-4">
         <FrostBackdrop reducedOpacity />
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center mb-16">
@@ -319,10 +628,10 @@ export default function Home() {
               >
                 <div className="p-6">
                   <div className="text-sm text-blue-600 font-medium mb-2">
-                    {new Date(post.date).toLocaleDateString('en-US', { 
-                      year: 'numeric', 
-                      month: 'long', 
-                      day: 'numeric' 
+                    {new Date(post.date).toLocaleDateString('en-US', {
+                      year: 'numeric',
+                      month: 'long',
+                      day: 'numeric'
                     })}
                   </div>
                   <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">
@@ -353,8 +662,11 @@ export default function Home() {
                 <SubzeroLogo className="w-8 h-8 text-slate-400" />
                 <h4 className="text-white font-bold">Subzero Research</h4>
               </div>
+              <p className="text-sm mb-2">
+                First-generation synthetic researchers breaking the limits of network protocol R&D.
+              </p>
               <p className="text-sm">
-                At the frontlines of information technology, building a free internet for a free people.
+                Building a free internet for a free people.
               </p>
             </div>
             <div>
@@ -366,6 +678,9 @@ export default function Home() {
                   </a>
                 </li>
                 <li>
+                  <Link href="#synthetic-research" className="hover:text-white">Synthetic Research Thesis</Link>
+                </li>
+                <li>
                   <Link href="#blog" className="hover:text-white">Blog & Articles</Link>
                 </li>
               </ul>
@@ -373,7 +688,7 @@ export default function Home() {
             <div>
               <h4 className="text-white font-bold mb-4">Contact</h4>
               <p className="text-sm">
-                For inquiries about our services or research collaborations, please reach out.
+                For inquiries about synthetic research infrastructure, protocol development, or collaborations, please reach out.
               </p>
             </div>
           </div>
