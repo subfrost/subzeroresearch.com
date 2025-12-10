@@ -10,8 +10,8 @@ import DistributedSystemSVG from "@/components/DistributedSystemSVG"
 import ConsensusFrameworkSVG from "@/components/ConsensusFrameworkSVG"
 
 const teamMembers = [
-  { name: "Raymond Pulver", title: "Founder", description: "Expert in distributed systems and p2p networks. Pioneering synthetic research methodologies." },
-  { name: "Gabe Lee", title: "Founder", description: "Specialist in infrastructure and system architecture. AI-augmented protocol design." },
+  { name: "Raymond Pulver", title: "Founder", description: "Expert in distributed systems and p2p networks. Architecting adversarially robust protocols." },
+  { name: "Gabe Lee", title: "Founder", description: "Specialist in infrastructure and system architecture. Procedural validation pipelines." },
   { name: "Ehran", title: "Partner", description: "Strategic advisor with extensive experience in technology ventures." },
   { name: "Allen", title: "Partner", description: "Technology leader with deep expertise in web3 and distributed systems." },
 ]
@@ -95,14 +95,15 @@ export default function Home() {
             </h1>
 
             <p className="text-2xl md:text-3xl text-slate-700 max-w-4xl mb-4 leading-relaxed font-medium">
-              First-generation synthetic researchers
+              Advancing information technology
             </p>
             <p className="text-2xl md:text-3xl text-blue-600 max-w-4xl mb-6 leading-relaxed font-medium">
-              breaking the limits of network protocol R&D
+              through procedurally validated synthetic research
             </p>
             <p className="text-lg md:text-xl text-slate-600 max-w-3xl mb-12 leading-relaxed">
-              We harness high-volume compute and frontier AI to conduct autonomous research at unprecedented scale,
-              building the complete user space IP stack that will replace the modern internet.
+              We iteratively advance information science via synthetic research cycles, architecting
+              network stacks and federated systems with security properties sufficient to outlast
+              malicious synthetic generations as they become mainstream.
             </p>
 
             <div className="flex flex-wrap gap-4 justify-center mb-12">
@@ -150,67 +151,68 @@ export default function Home() {
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>
-              The Future of Research is Synthetic
+              Procedurally Validated Research Cycles
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Synthetic Research: Our Thesis
             </h2>
             <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
-              We are among the first generation of synthetic researchers&mdash;teams that leverage frontier AI
-              systems and massive compute to conduct research at speeds and scales previously impossible.
+              AI systems will soon conduct research autonomously at scales that dwarf human capacity.
+              We are building infrastructure designed to remain secure in that world&mdash;architecting
+              systems today that adversarial synthetic agents cannot subvert tomorrow.
             </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 mb-16">
-            {/* The Paradigm Shift */}
+            {/* The Security Thesis */}
             <div className="bg-slate-800/50 border border-slate-700 rounded-2xl p-8">
               <div className="w-14 h-14 bg-gradient-to-br from-purple-500 to-blue-600 rounded-xl flex items-center justify-center mb-6">
                 <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-white mb-4">The Paradigm Shift</h3>
+              <h3 className="text-2xl font-bold text-white mb-4">The Security Thesis</h3>
               <p className="text-slate-300 mb-6 leading-relaxed">
-                The automation of AI research itself creates a self-accelerating cycle. When AI systems can
-                meaningfully contribute to their own development and to fundamental research, progress becomes
-                exponential rather than linear.
+                As synthetic research becomes mainstream, malicious actors will deploy AI systems to discover
+                and exploit vulnerabilities at machine speed. Traditional security models&mdash;patching after
+                discovery, trusting central authorities&mdash;will not survive this transition.
               </p>
               <p className="text-slate-300 leading-relaxed">
-                We recognized this inflection point early. Rather than waiting for synthetic research to become
-                mainstream, we built the infrastructure to be among the first practitioners&mdash;applying
-                AI-augmented methodologies to advance network protocols for the post-quantum era.
+                We architect systems with security properties that hold even when adversaries have access to
+                the same synthetic research capabilities. No trusted third parties. No central points of failure.
+                No attack surfaces for autonomous agents to exploit.
               </p>
             </div>
 
-            {/* Our Approach */}
+            {/* Procedural Validation */}
             <div className="bg-slate-800/50 border border-slate-700 rounded-2xl p-8">
               <div className="w-14 h-14 bg-gradient-to-br from-cyan-500 to-teal-600 rounded-xl flex items-center justify-center mb-6">
                 <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-white mb-4">High-Volume Compute Research</h3>
+              <h3 className="text-2xl font-bold text-white mb-4">Procedural Validation Cycles</h3>
               <p className="text-slate-300 mb-6 leading-relaxed">
-                We deploy significant compute resources to run AI-assisted research pipelines. Our systems
-                explore solution spaces, synthesize novel protocol designs, verify cryptographic properties,
-                and generate implementation code&mdash;compressing years of traditional R&D into months.
+                Each research iteration feeds into the next. We synthesize protocol designs, formally verify
+                security properties, generate adversarial test cases, and validate implementations against
+                edge conditions&mdash;compressing years of traditional R&D into iterative cycles.
               </p>
               <div className="space-y-3">
                 <div className="flex items-center gap-3 text-slate-300">
                   <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
-                  <span>Frontier AI models for protocol design exploration</span>
+                  <span>Protocol synthesis via frontier AI models</span>
                 </div>
                 <div className="flex items-center gap-3 text-slate-300">
                   <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
-                  <span>Automated formal verification of security properties</span>
+                  <span>Automated formal verification of security invariants</span>
                 </div>
                 <div className="flex items-center gap-3 text-slate-300">
                   <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
-                  <span>Synthetic data generation for edge case testing</span>
+                  <span>Adversarial fuzzing and edge case generation</span>
                 </div>
                 <div className="flex items-center gap-3 text-slate-300">
                   <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
-                  <span>AI-generated implementations validated by humans</span>
+                  <span>Human validation of critical security assumptions</span>
                 </div>
               </div>
             </div>
@@ -221,26 +223,26 @@ export default function Home() {
             <div className="text-center mb-8">
               <h3 className="text-3xl font-bold text-white mb-4">What We're Building</h3>
               <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-                A complete user space IP stack designed to replace the modern internet's architecture
+                Network stacks and federated systems of capital with security properties that outlast adversarial synthetic agents
               </p>
             </div>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="text-center">
                 <div className="text-4xl font-bold text-blue-400 mb-2">Identity-First</div>
                 <p className="text-slate-400">
-                  Cryptographic identity at the network layer, not bolted on. Every connection authenticated, every packet attributable.
+                  Cryptographic identity at the network layer. No DNS hijacking, no IP spoofing, no certificate authorities to compromise.
                 </p>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-purple-400 mb-2">Quantum-Safe</div>
+                <div className="text-4xl font-bold text-purple-400 mb-2">Zero Attack Surface</div>
                 <p className="text-slate-400">
-                  Post-quantum cryptographic primitives integrated from the ground up. Ready for the cryptographic transition.
+                  No listening ports, no public endpoints, no service enumeration. Nothing for autonomous agents to probe or exploit.
                 </p>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-cyan-400 mb-2">User Space</div>
+                <div className="text-4xl font-bold text-cyan-400 mb-2">Federated Capital</div>
                 <p className="text-slate-400">
-                  Complete IP stack running in user space. No kernel modifications, deployable anywhere, compatible with existing software.
+                  Distributed consensus for value transfer without trusted intermediaries. Mesh networks that survive node compromise.
                 </p>
               </div>
             </div>
@@ -454,8 +456,9 @@ export default function Home() {
               <h3 className="text-2xl font-bold text-slate-900 mb-6">About Subzero Research</h3>
               <div className="space-y-4 text-lg text-slate-700">
                 <p>
-                  Subzero Research is a Delaware C Corporation pioneering synthetic research methodologies
-                  for peer-to-peer systems, distributed computing, and privacy-focused AI infrastructure.
+                  Subzero Research is a Delaware C Corporation advancing information technology through
+                  procedurally validated synthetic research. We architect peer-to-peer systems, distributed
+                  computing infrastructure, and federated systems of capital.
                 </p>
                 <p>
                   As active contributors to <strong>rust-libp2p</strong> and maintainers of{" "}
@@ -467,8 +470,8 @@ export default function Home() {
                   >
                     libp2p-webtransport-sys
                   </a>
-                  , we advance decentralized networking technology using AI-augmented research pipelines
-                  that compress years of traditional R&D.
+                  , we build decentralized networking technology with security properties designed to
+                  outlast adversarial synthetic agents.
                 </p>
               </div>
             </div>
@@ -542,8 +545,8 @@ export default function Home() {
               </div>
               <h4 className="text-xl font-bold text-slate-900 mb-3">Synthetic Research Infrastructure</h4>
               <p className="text-slate-600">
-                Deploy AI-augmented research pipelines for your organization. We build custom infrastructure
-                that leverages frontier models and high-volume compute to accelerate R&D cycles.
+                Deploy procedurally validated research pipelines for your organization. We build custom
+                infrastructure with iterative synthesis, verification, and adversarial testing cycles.
               </p>
             </div>
             <div className="bg-gradient-to-br from-white to-blue-50 rounded-xl shadow-lg border border-slate-200 p-6 hover:shadow-xl transition-shadow">
@@ -663,7 +666,7 @@ export default function Home() {
                 <h4 className="text-white font-bold">Subzero Research</h4>
               </div>
               <p className="text-sm mb-2">
-                First-generation synthetic researchers breaking the limits of network protocol R&D.
+                Advancing information technology through procedurally validated synthetic research.
               </p>
               <p className="text-sm">
                 Building a free internet for a free people.

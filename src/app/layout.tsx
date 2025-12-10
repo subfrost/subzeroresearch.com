@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Subzero Research Inc | First-Generation Synthetic Researchers",
-  description: "Subzero Research is pioneering synthetic research methodologies using high-volume compute and frontier AI. We're building a complete user space IP stack with quantum-safe streams, cryptographic identity, and ACLs to replace the modern internet.",
+  title: "Subzero Research Inc | Procedurally Validated Synthetic Research",
+  description: "Subzero Research advances information technology through procedurally validated synthetic research cycles. We architect network stacks and federated systems with security properties sufficient to outlast malicious synthetic generations.",
   keywords: [
     "synthetic research",
     "AI research",
@@ -54,8 +54,8 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://subzeroresearch.com",
-    title: "Subzero Research Inc | First-Generation Synthetic Researchers",
-    description: "We harness high-volume compute and frontier AI to conduct autonomous research at unprecedented scale, building the complete user space IP stack that will replace the modern internet.",
+    title: "Subzero Research Inc | Procedurally Validated Synthetic Research",
+    description: "We iteratively advance information science via synthetic research cycles, architecting network stacks and federated systems with security properties sufficient to outlast malicious synthetic generations.",
     siteName: "Subzero Research Inc",
     images: [
       {
@@ -68,8 +68,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Subzero Research Inc | First-Generation Synthetic Researchers",
-    description: "Breaking the limits of network protocol R&D with AI-augmented research pipelines. Building quantum-safe, identity-first networking.",
+    title: "Subzero Research Inc | Procedurally Validated Synthetic Research",
+    description: "Architecting network stacks and federated systems with security properties that outlast adversarial synthetic agents.",
     images: ["/icon.svg"],
   },
   robots: {

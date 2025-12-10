@@ -12,13 +12,13 @@ export default function StructuredData() {
         "@type": "Person",
         "name": "Raymond Pulver",
         "jobTitle": "Founder",
-        "description": "Expert in distributed systems and p2p networks. Pioneering synthetic research methodologies."
+        "description": "Expert in distributed systems and p2p networks. Architecting adversarially robust protocols."
       },
       {
         "@type": "Person",
         "name": "Gabe Lee",
         "jobTitle": "Founder",
-        "description": "Specialist in infrastructure and system architecture. AI-augmented protocol design."
+        "description": "Specialist in infrastructure and system architecture. Procedural validation pipelines."
       }
     ],
     "address": {
@@ -34,8 +34,8 @@ export default function StructuredData() {
     "sameAs": [
       "https://github.com/subfrost/libp2p-webtransport-sys"
     ],
-    "description": "Subzero Research Inc is pioneering synthetic research methodologies using high-volume compute and frontier AI to build a complete user space IP stack with quantum-safe streams, cryptographic identity, and ACLs. We are first-generation synthetic researchers breaking the limits of network protocol R&D.",
-    "slogan": "First-generation synthetic researchers breaking the limits of network protocol R&D",
+    "description": "Subzero Research advances information technology through procedurally validated synthetic research cycles. We architect network stacks and federated systems with security properties sufficient to outlast malicious synthetic generations as they become mainstream.",
+    "slogan": "Advancing information technology through procedurally validated synthetic research",
     "knowsAbout": [
       "Synthetic Research",
       "AI-Augmented R&D",
