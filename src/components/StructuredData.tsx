@@ -12,13 +12,13 @@ export default function StructuredData() {
         "@type": "Person",
         "name": "Raymond Pulver",
         "jobTitle": "Founder",
-        "description": "Expert in distributed systems and p2p networks. Architecting adversarially robust protocols."
+        "description": "Distributed systems and P2P networking."
       },
       {
         "@type": "Person",
         "name": "Gabe Lee",
         "jobTitle": "Founder",
-        "description": "Specialist in infrastructure and system architecture. Procedural validation pipelines."
+        "description": "Infrastructure and system architecture."
       }
     ],
     "address": {
@@ -34,29 +34,21 @@ export default function StructuredData() {
     "sameAs": [
       "https://github.com/subfrost/libp2p-webtransport-sys"
     ],
-    "description": "Subzero Research advances information technology through procedurally validated synthetic research cycles. We architect network stacks and federated systems with security properties sufficient to outlast malicious synthetic generations as they become mainstream.",
-    "slogan": "Advancing information technology through procedurally validated synthetic research",
+    "description": "We build L3 abstractions over IP for modern P2P systems—a complete user space IP stack with cryptographic identity, end-to-end encryption, and zero attack surface.",
+    "slogan": "User space networking for the decentralized internet",
     "knowsAbout": [
-      "Synthetic Research",
-      "AI-Augmented R&D",
       "Distributed Systems",
       "Peer-to-Peer Networks",
       "User Space IP Stack",
-      "Quantum-Safe Cryptography",
-      "Post-Quantum Protocols",
-      "Consensus Algorithms",
-      "UDP Protocol",
       "WebTransport",
       "QUIC",
       "HTTP/3",
       "rust-libp2p",
       "Noise Protocol",
       "Cryptographic Identity",
-      "Access Control Lists",
       "TUN Device Networking",
       "Circuit Relay",
       "Kademlia DHT",
-      "Private AI Infrastructure",
       "Byzantine Fault Tolerance"
     ],
     "makesOffer": [
@@ -64,24 +56,24 @@ export default function StructuredData() {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Synthetic Research Infrastructure",
-          "description": "AI-augmented research pipelines leveraging frontier models and high-volume compute"
+          "name": "Private AI Infrastructure",
+          "description": "On-premises AI deployments for healthcare and regulated industries"
         }
       },
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Private AI Integration",
-          "description": "Privacy-preserving AI solutions for sensitive applications"
+          "name": "Distributed Systems",
+          "description": "P2P protocol design and implementation"
         }
       },
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Distributed Systems Development",
-          "description": "Resilient P2P networks and decentralized infrastructure"
+          "name": "Consulting",
+          "description": "Architecture review and security audits for distributed systems"
         }
       }
     ]
