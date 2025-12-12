@@ -700,7 +700,9 @@ export default function SeedPage() {
 
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="mailto:founders@subzeroresearch.com"
+              href="https://t.me/kungfuflex"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-white text-slate-900 px-8 py-4 rounded-lg font-bold hover:bg-slate-100 transition-colors"
             >
               Contact Founders

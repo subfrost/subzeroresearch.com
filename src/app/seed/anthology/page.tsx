@@ -492,7 +492,9 @@ export default function AnthologyPage() {
 
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="mailto:founders@subzeroresearch.com?subject=Anthology%20Fund%20Application"
+              href="https://t.me/kungfuflex"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-amber-500 text-white px-6 py-3 rounded-lg font-bold hover:bg-amber-400 transition-colors"
             >
               Contact Founders
