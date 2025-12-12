@@ -303,35 +303,16 @@ const MarketOpportunitySVG = () => (
 )
 
 // Custom SVG: Funding Structure
-const FundingStructureSVG = ({ showPreSeed = true }: { showPreSeed?: boolean }) => (
+const FundingStructureSVG = () => (
   <svg viewBox="0 0 600 200" className="w-full h-auto">
     <defs>
-      <linearGradient id="preSeedGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stopColor="#f59e0b"/>
-        <stop offset="100%" stopColor="#d97706"/>
-      </linearGradient>
       <linearGradient id="seedGrad" x1="0%" y1="0%" x2="100%" y2="100%">
         <stop offset="0%" stopColor="#3b82f6"/>
         <stop offset="100%" stopColor="#1d4ed8"/>
       </linearGradient>
     </defs>
 
-    {showPreSeed && (
-      <g transform="translate(30, 20)">
-        <rect x="0" y="0" width="250" height="160" rx="12" fill="url(#preSeedGrad)" opacity="0.1" stroke="#f59e0b" strokeWidth="2"/>
-        <rect x="0" y="0" width="250" height="40" rx="12" fill="url(#preSeedGrad)"/>
-        <text x="125" y="27" textAnchor="middle" className="fill-white text-base font-bold">Pre-Seed Option</text>
-
-        <text x="125" y="70" textAnchor="middle" className="fill-amber-700 text-sm">For early conviction partners</text>
-
-        <text x="125" y="100" textAnchor="middle" className="fill-slate-800 text-2xl font-bold">$12M</text>
-        <text x="125" y="118" textAnchor="middle" className="fill-slate-600 text-sm">Valuation Cap</text>
-
-        <text x="125" y="145" textAnchor="middle" className="fill-amber-600 text-xs font-medium">✓ Better terms for speed</text>
-      </g>
-    )}
-
-    <g transform={showPreSeed ? "translate(320, 20)" : "translate(175, 20)"}>
+    <g transform="translate(175, 20)">
       <rect x="0" y="0" width="250" height="160" rx="12" fill="url(#seedGrad)" opacity="0.1" stroke="#3b82f6" strokeWidth="2"/>
       <rect x="0" y="0" width="250" height="40" rx="12" fill="url(#seedGrad)"/>
       <text x="125" y="27" textAnchor="middle" className="fill-white text-base font-bold">Seed Round</text>
@@ -341,14 +322,8 @@ const FundingStructureSVG = ({ showPreSeed = true }: { showPreSeed?: boolean }) 
       <text x="125" y="100" textAnchor="middle" className="fill-slate-800 text-2xl font-bold">$2.25M</text>
       <text x="125" y="118" textAnchor="middle" className="fill-slate-600 text-sm">@ $18M Valuation</text>
 
-      <text x="125" y="145" textAnchor="middle" className="fill-blue-600 text-xs font-medium">✓ Full seed terms</text>
+      <text x="125" y="145" textAnchor="middle" className="fill-blue-600 text-xs font-medium">✓ Building the AI security layer</text>
     </g>
-
-    {showPreSeed && (
-      <g transform="translate(280, 85)">
-        <text x="20" y="15" textAnchor="middle" className="fill-slate-400 text-2xl font-light">→</text>
-      </g>
-    )}
   </svg>
 )
 
@@ -662,8 +637,8 @@ export default function SeedPage() {
               <h3 className="text-xl font-bold text-slate-900">Gabe Lee</h3>
               <div className="text-purple-600 font-medium mb-3">Founder</div>
               <p className="text-slate-600 text-sm">
-                Infrastructure architect. Kubernetes, GPU clusters at scale.
-                Production HIPAA-compliant AI deployments.
+                Decade in management consulting. AI and growth strategy
+                for private equity and global financial institutions.
               </p>
             </div>
           </div>
@@ -678,7 +653,7 @@ export default function SeedPage() {
           </div>
 
           <div className="bg-gradient-to-br from-slate-50 to-blue-50 rounded-2xl p-8 border border-slate-200 mb-8">
-            <FundingStructureSVG showPreSeed={true} />
+            <FundingStructureSVG />
           </div>
 
           <div className="bg-white rounded-2xl shadow-lg p-8 border border-slate-200">

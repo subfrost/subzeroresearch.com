@@ -207,36 +207,19 @@ const StackArchitectureSVG = () => (
 const FundingStructureSVG = () => (
   <svg viewBox="0 0 600 180" className="w-full h-auto">
     <defs>
-      <linearGradient id="preSeedGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stopColor="#f59e0b"/><stop offset="100%" stopColor="#d97706"/>
-      </linearGradient>
       <linearGradient id="seedGrad" x1="0%" y1="0%" x2="100%" y2="100%">
         <stop offset="0%" stopColor="#3b82f6"/><stop offset="100%" stopColor="#1d4ed8"/>
       </linearGradient>
     </defs>
 
-    <g transform="translate(30, 10)">
-      <rect x="0" y="0" width="240" height="150" rx="12" fill="url(#preSeedGrad)" opacity="0.1" stroke="#f59e0b" strokeWidth="2"/>
-      <rect x="0" y="0" width="240" height="38" rx="12" fill="url(#preSeedGrad)"/>
-      <text x="120" y="25" textAnchor="middle" className="fill-white text-sm font-bold">Pre-Seed Option</text>
-      <text x="120" y="65" textAnchor="middle" className="fill-amber-700 text-xs">Early conviction • Faster close</text>
-      <text x="120" y="95" textAnchor="middle" className="fill-slate-800 text-xl font-bold">$12M</text>
-      <text x="120" y="115" textAnchor="middle" className="fill-slate-600 text-sm">Valuation Cap</text>
-      <text x="120" y="138" textAnchor="middle" className="fill-amber-600 text-xs">Better terms for speed</text>
-    </g>
-
-    <g transform="translate(275, 65)">
-      <text x="25" y="15" textAnchor="middle" className="fill-slate-400 text-xl">→</text>
-    </g>
-
-    <g transform="translate(330, 10)">
+    <g transform="translate(180, 10)">
       <rect x="0" y="0" width="240" height="150" rx="12" fill="url(#seedGrad)" opacity="0.1" stroke="#3b82f6" strokeWidth="2"/>
       <rect x="0" y="0" width="240" height="38" rx="12" fill="url(#seedGrad)"/>
       <text x="120" y="25" textAnchor="middle" className="fill-white text-sm font-bold">Seed Round</text>
       <text x="120" y="65" textAnchor="middle" className="fill-blue-700 text-xs">Target raise</text>
       <text x="120" y="95" textAnchor="middle" className="fill-slate-800 text-xl font-bold">$2.25M @ $18M</text>
       <text x="120" y="115" textAnchor="middle" className="fill-slate-600 text-sm">Valuation</text>
-      <text x="120" y="138" textAnchor="middle" className="fill-blue-600 text-xs">Full seed terms</text>
+      <text x="120" y="138" textAnchor="middle" className="fill-blue-600 text-xs">Building the AI security layer</text>
     </g>
   </svg>
 )
@@ -286,10 +269,6 @@ export default function AnthologyPage() {
               <div className="bg-white/10 backdrop-blur px-5 py-3 rounded-lg">
                 <div className="text-xl font-bold text-green-400">Live</div>
                 <div className="text-xs text-slate-400">Product</div>
-              </div>
-              <div className="bg-white/10 backdrop-blur px-5 py-3 rounded-lg">
-                <div className="text-xl font-bold text-amber-400">$12M</div>
-                <div className="text-xs text-slate-400">Pre-Seed Option</div>
               </div>
             </div>
           </div>
@@ -427,7 +406,7 @@ export default function AnthologyPage() {
               <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-700 rounded-full flex items-center justify-center mx-auto mb-3 text-white text-xl font-bold">GL</div>
               <h3 className="text-lg font-bold text-slate-900">Gabe Lee</h3>
               <div className="text-purple-600 font-medium text-sm mb-2">Founder</div>
-              <p className="text-slate-600 text-xs">Infrastructure architect • GPU clusters • HIPAA AI deployments</p>
+              <p className="text-slate-600 text-xs">10 years management consulting • AI & growth strategy • PE & financial institutions</p>
             </div>
           </div>
         </div>
@@ -438,19 +417,10 @@ export default function AnthologyPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-8">
             <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-3">The Raise</h2>
-            <p className="text-slate-600">Two entry points for partnership</p>
           </div>
 
           <div className="bg-gradient-to-br from-slate-50 to-amber-50 rounded-2xl p-6 border border-slate-200">
             <FundingStructureSVG />
-          </div>
-
-          <div className="mt-6 p-5 bg-amber-50 rounded-xl border border-amber-200">
-            <h4 className="font-bold text-slate-900 mb-2">Pre-Seed Rationale</h4>
-            <p className="text-slate-600 text-sm">
-              Early believers get better terms. The $12M pre-seed option is for partners who want to move fast
-              and lock in conviction before the full seed closes. Same team, same tech, better price for speed.
-            </p>
           </div>
         </div>
       </section>
