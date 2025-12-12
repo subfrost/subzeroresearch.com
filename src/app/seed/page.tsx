@@ -96,14 +96,14 @@ const AttackSurfaceSVG = () => (
       </g>
 
       {/* Blocked attack arrows */}
-      <g opacity="0.3">
+      <g opacity="0.4">
         <path d="M30 60 L70 55" stroke="#94a3b8" strokeWidth="2" strokeDasharray="4"/>
         <path d="M30 100 L70 105" stroke="#94a3b8" strokeWidth="2" strokeDasharray="4"/>
         <path d="M270 60 L230 55" stroke="#94a3b8" strokeWidth="2" strokeDasharray="4"/>
         <path d="M270 100 L230 105" stroke="#94a3b8" strokeWidth="2" strokeDasharray="4"/>
-        <text x="50" y="45" className="fill-slate-400 text-[10px]">blocked</text>
-        <text x="240" y="45" className="fill-slate-400 text-[10px]">blocked</text>
       </g>
+      <text x="50" y="45" className="fill-slate-500 text-[10px] font-medium">blocked</text>
+      <text x="240" y="45" className="fill-slate-500 text-[10px] font-medium">blocked</text>
 
       {/* Security count */}
       <rect x="100" y="140" width="100" height="30" rx="4" fill="#f0fdf4" stroke="#22c55e"/>
@@ -147,26 +147,8 @@ const StackArchitectureSVG = () => (
     {/* Layer 4: Applications */}
     <g transform="translate(50, 20)">
       <rect x="0" y="0" width="500" height="70" rx="12" fill="url(#layer4)" opacity="0.9"/>
-      <text x="250" y="28" textAnchor="middle" className="fill-white text-base font-bold">AI Agents / LLM Inference / Multi-Agent Systems</text>
-      <text x="250" y="50" textAnchor="middle" className="fill-white text-sm opacity-80">Any TCP/IP application works unchanged</text>
-
-      {/* App icons */}
-      <g transform="translate(30, 25)">
-        <rect x="0" y="0" width="50" height="25" rx="4" fill="white" opacity="0.2"/>
-        <text x="25" y="17" textAnchor="middle" className="fill-white text-xs">LangChain</text>
-      </g>
-      <g transform="translate(90, 25)">
-        <rect x="0" y="0" width="50" height="25" rx="4" fill="white" opacity="0.2"/>
-        <text x="25" y="17" textAnchor="middle" className="fill-white text-xs">CrewAI</text>
-      </g>
-      <g transform="translate(360, 25)">
-        <rect x="0" y="0" width="50" height="25" rx="4" fill="white" opacity="0.2"/>
-        <text x="25" y="17" textAnchor="middle" className="fill-white text-xs">Ollama</text>
-      </g>
-      <g transform="translate(420, 25)">
-        <rect x="0" y="0" width="50" height="25" rx="4" fill="white" opacity="0.2"/>
-        <text x="25" y="17" textAnchor="middle" className="fill-white text-xs">vLLM</text>
-      </g>
+      <text x="250" y="30" textAnchor="middle" className="fill-white text-sm font-bold">AI Agents / LLMs / Multi-Agent Systems</text>
+      <text x="250" y="50" textAnchor="middle" className="fill-white text-xs opacity-80">Any TCP/IP application works unchanged</text>
     </g>
 
     {/* Arrow down */}
@@ -304,7 +286,7 @@ const MarketOpportunitySVG = () => (
 
 // Full-Stack AI Safety SVG
 const FullStackSafetySVG = () => (
-  <svg viewBox="0 0 700 250" className="w-full h-auto">
+  <svg viewBox="0 0 700 240" className="w-full h-auto">
     <defs>
       <linearGradient id="modelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
         <stop offset="0%" stopColor="#8b5cf6"/>
@@ -316,60 +298,60 @@ const FullStackSafetySVG = () => (
       </linearGradient>
     </defs>
 
-    <text x="350" y="25" textAnchor="middle" className="fill-slate-700 text-base font-bold">Full-Stack AI Safety</text>
+    <text x="350" y="20" textAnchor="middle" className="fill-slate-700 text-sm font-bold">Full-Stack AI Safety</text>
 
     {/* Model Safety side */}
-    <g transform="translate(50, 50)">
-      <rect x="0" y="0" width="250" height="150" rx="16" fill="url(#modelGrad)" opacity="0.1" stroke="#8b5cf6" strokeWidth="2"/>
-      <rect x="0" y="0" width="250" height="45" rx="16" fill="url(#modelGrad)"/>
-      <text x="125" y="30" textAnchor="middle" className="fill-white text-sm font-bold">Model-Level Safety</text>
+    <g transform="translate(50, 40)">
+      <rect x="0" y="0" width="250" height="140" rx="12" fill="url(#modelGrad)" opacity="0.1" stroke="#8b5cf6" strokeWidth="2"/>
+      <rect x="0" y="0" width="250" height="38" rx="12" fill="url(#modelGrad)"/>
+      <text x="125" y="25" textAnchor="middle" className="fill-white text-xs font-bold">Model-Level Safety</text>
 
-      <text x="125" y="75" textAnchor="middle" className="fill-slate-700 text-sm font-medium">Alignment & Behavior</text>
+      <text x="125" y="60" textAnchor="middle" className="fill-slate-700 text-xs font-medium">Alignment & Behavior</text>
 
-      <g transform="translate(20, 90)">
-        <text x="0" y="0" className="fill-slate-600 text-xs">✓ RLHF alignment</text>
-        <text x="0" y="18" className="fill-slate-600 text-xs">✓ Safety training</text>
-        <text x="0" y="36" className="fill-slate-600 text-xs">✓ Refusal behaviors</text>
+      <g transform="translate(15, 75)">
+        <text x="0" y="0" className="fill-slate-600 text-[10px]">✓ RLHF alignment</text>
+        <text x="0" y="15" className="fill-slate-600 text-[10px]">✓ Safety training</text>
+        <text x="0" y="30" className="fill-slate-600 text-[10px]">✓ Refusal behaviors</text>
       </g>
 
-      <g transform="translate(130, 90)">
-        <text x="0" y="0" className="fill-slate-600 text-xs">✓ Output filtering</text>
-        <text x="0" y="18" className="fill-slate-600 text-xs">✓ Prompt injection defense</text>
-        <text x="0" y="36" className="fill-slate-600 text-xs">✓ Guardrails</text>
+      <g transform="translate(125, 75)">
+        <text x="0" y="0" className="fill-slate-600 text-[10px]">✓ Output filtering</text>
+        <text x="0" y="15" className="fill-slate-600 text-[10px]">✓ Injection defense</text>
+        <text x="0" y="30" className="fill-slate-600 text-[10px]">✓ Guardrails</text>
       </g>
     </g>
 
     {/* Plus sign */}
-    <g transform="translate(325, 110)">
-      <circle cx="25" cy="25" r="20" fill="#f1f5f9" stroke="#cbd5e1" strokeWidth="2"/>
-      <text x="25" y="32" textAnchor="middle" className="fill-slate-500 text-xl font-bold">+</text>
+    <g transform="translate(325, 95)">
+      <circle cx="25" cy="25" r="18" fill="#f1f5f9" stroke="#cbd5e1" strokeWidth="2"/>
+      <text x="25" y="31" textAnchor="middle" className="fill-slate-500 text-lg font-bold">+</text>
     </g>
 
     {/* Infrastructure Safety side */}
-    <g transform="translate(400, 50)">
-      <rect x="0" y="0" width="250" height="150" rx="16" fill="url(#infraGrad)" opacity="0.1" stroke="#3b82f6" strokeWidth="2"/>
-      <rect x="0" y="0" width="250" height="45" rx="16" fill="url(#infraGrad)"/>
-      <text x="125" y="30" textAnchor="middle" className="fill-white text-sm font-bold">Infrastructure Safety</text>
+    <g transform="translate(400, 40)">
+      <rect x="0" y="0" width="250" height="140" rx="12" fill="url(#infraGrad)" opacity="0.1" stroke="#3b82f6" strokeWidth="2"/>
+      <rect x="0" y="0" width="250" height="38" rx="12" fill="url(#infraGrad)"/>
+      <text x="125" y="25" textAnchor="middle" className="fill-white text-xs font-bold">Infrastructure Safety</text>
 
-      <text x="125" y="75" textAnchor="middle" className="fill-slate-700 text-sm font-medium">Network & Runtime</text>
+      <text x="125" y="60" textAnchor="middle" className="fill-slate-700 text-xs font-medium">Network & Runtime</text>
 
-      <g transform="translate(20, 90)">
-        <text x="0" y="0" className="fill-slate-600 text-xs">✓ Zero attack surface</text>
-        <text x="0" y="18" className="fill-slate-600 text-xs">✓ Crypto identity</text>
-        <text x="0" y="36" className="fill-slate-600 text-xs">✓ E2E encryption</text>
+      <g transform="translate(15, 75)">
+        <text x="0" y="0" className="fill-slate-600 text-[10px]">✓ Zero attack surface</text>
+        <text x="0" y="15" className="fill-slate-600 text-[10px]">✓ Crypto identity</text>
+        <text x="0" y="30" className="fill-slate-600 text-[10px]">✓ E2E encryption</text>
       </g>
 
-      <g transform="translate(130, 90)">
-        <text x="0" y="0" className="fill-slate-600 text-xs">✓ No central trust</text>
-        <text x="0" y="18" className="fill-slate-600 text-xs">✓ Agent isolation</text>
-        <text x="0" y="36" className="fill-slate-600 text-xs">✓ Secure coordination</text>
+      <g transform="translate(125, 75)">
+        <text x="0" y="0" className="fill-slate-600 text-[10px]">✓ No central trust</text>
+        <text x="0" y="15" className="fill-slate-600 text-[10px]">✓ Agent isolation</text>
+        <text x="0" y="30" className="fill-slate-600 text-[10px]">✓ Secure coordination</text>
       </g>
     </g>
 
     {/* Bottom conclusion */}
-    <g transform="translate(175, 215)">
-      <rect x="0" y="0" width="350" height="30" rx="8" fill="#f0fdf4" stroke="#22c55e" strokeWidth="2"/>
-      <text x="175" y="20" textAnchor="middle" className="fill-green-700 text-sm font-bold">= Complete AI Safety Stack</text>
+    <g transform="translate(175, 200)">
+      <rect x="0" y="0" width="350" height="28" rx="8" fill="#f0fdf4" stroke="#22c55e" strokeWidth="2"/>
+      <text x="175" y="19" textAnchor="middle" className="fill-green-700 text-xs font-bold">= Complete AI Safety Stack</text>
     </g>
   </svg>
 )
@@ -401,7 +383,7 @@ const FundingStructureSVG = () => (
 
 // Use of Funds SVG
 const UseOfFundsSVG = () => (
-  <svg viewBox="0 0 500 300" className="w-full h-auto">
+  <svg viewBox="0 0 600 280" className="w-full h-auto">
     <defs>
       <linearGradient id="eng" x1="0%" y1="0%" x2="100%" y2="0%">
         <stop offset="0%" stopColor="#3b82f6"/>
@@ -422,31 +404,31 @@ const UseOfFundsSVG = () => (
     </defs>
 
     {/* Title */}
-    <text x="250" y="25" textAnchor="middle" className="fill-slate-700 text-base font-bold">Use of Funds</text>
+    <text x="300" y="25" textAnchor="middle" className="fill-slate-700 text-base font-bold">Use of Funds</text>
 
     {/* Bars */}
-    <g transform="translate(50, 50)">
+    <g transform="translate(30, 50)">
       {/* Engineering */}
-      <rect x="0" y="0" width="300" height="45" rx="8" fill="url(#eng)"/>
-      <text x="15" y="28" className="fill-white text-sm font-bold">Engineering (60%)</text>
-      <text x="285" y="28" textAnchor="end" className="fill-white text-sm">$1.35M</text>
-      <text x="320" y="28" className="fill-slate-600 text-xs">2-3 Senior Rust/Systems Engineers</text>
+      <rect x="0" y="0" width="340" height="42" rx="8" fill="url(#eng)"/>
+      <text x="12" y="26" className="fill-white text-xs font-bold">Engineering 60%</text>
+      <text x="328" y="26" textAnchor="end" className="fill-white text-xs font-medium">$1.35M</text>
+      <text x="355" y="26" className="fill-slate-600 text-[11px]">2-3 Rust/Systems Engineers</text>
 
       {/* Infrastructure */}
-      <rect x="0" y="60" width="150" height="45" rx="8" fill="url(#infra)"/>
-      <text x="15" y="88" className="fill-white text-sm font-bold">Infra (20%)</text>
-      <text x="135" y="88" textAnchor="end" className="fill-white text-sm">$450K</text>
-      <text x="165" y="88" className="fill-slate-600 text-xs">Managed relay network, cloud</text>
+      <rect x="0" y="52" width="170" height="42" rx="8" fill="url(#infra)"/>
+      <text x="12" y="78" className="fill-white text-xs font-bold">Infra 20%</text>
+      <text x="158" y="78" textAnchor="end" className="fill-white text-xs font-medium">$450K</text>
+      <text x="185" y="78" className="fill-slate-600 text-[11px]">Relay network, cloud</text>
 
       {/* DevRel */}
-      <rect x="0" y="120" width="75" height="45" rx="8" fill="url(#devrel)"/>
-      <text x="15" y="148" className="fill-white text-sm font-bold">DevRel (10%)</text>
-      <text x="95" y="148" className="fill-slate-600 text-xs">Docs, community, evangelism</text>
+      <rect x="0" y="104" width="85" height="42" rx="8" fill="url(#devrel)"/>
+      <text x="12" y="130" className="fill-white text-xs font-bold">DevRel 10%</text>
+      <text x="100" y="130" className="fill-slate-600 text-[11px]">Docs, community</text>
 
       {/* Security */}
-      <rect x="0" y="180" width="75" height="45" rx="8" fill="url(#security)"/>
-      <text x="15" y="208" className="fill-white text-sm font-bold">Security (10%)</text>
-      <text x="95" y="208" className="fill-slate-600 text-xs">Audits, compliance, pen testing</text>
+      <rect x="0" y="156" width="85" height="42" rx="8" fill="url(#security)"/>
+      <text x="12" y="182" className="fill-white text-xs font-bold">Security 10%</text>
+      <text x="100" y="182" className="fill-slate-600 text-[11px]">Audits, pen testing</text>
     </g>
   </svg>
 )
