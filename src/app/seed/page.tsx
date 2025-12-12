@@ -302,6 +302,78 @@ const MarketOpportunitySVG = () => (
   </svg>
 )
 
+// Full-Stack AI Safety SVG
+const FullStackSafetySVG = () => (
+  <svg viewBox="0 0 700 250" className="w-full h-auto">
+    <defs>
+      <linearGradient id="modelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stopColor="#8b5cf6"/>
+        <stop offset="100%" stopColor="#a78bfa"/>
+      </linearGradient>
+      <linearGradient id="infraGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stopColor="#3b82f6"/>
+        <stop offset="100%" stopColor="#60a5fa"/>
+      </linearGradient>
+    </defs>
+
+    <text x="350" y="25" textAnchor="middle" className="fill-slate-700 text-base font-bold">Full-Stack AI Safety</text>
+
+    {/* Model Safety side */}
+    <g transform="translate(50, 50)">
+      <rect x="0" y="0" width="250" height="150" rx="16" fill="url(#modelGrad)" opacity="0.1" stroke="#8b5cf6" strokeWidth="2"/>
+      <rect x="0" y="0" width="250" height="45" rx="16" fill="url(#modelGrad)"/>
+      <text x="125" y="30" textAnchor="middle" className="fill-white text-sm font-bold">Model-Level Safety</text>
+
+      <text x="125" y="75" textAnchor="middle" className="fill-slate-700 text-sm font-medium">Alignment & Behavior</text>
+
+      <g transform="translate(20, 90)">
+        <text x="0" y="0" className="fill-slate-600 text-xs">✓ RLHF alignment</text>
+        <text x="0" y="18" className="fill-slate-600 text-xs">✓ Safety training</text>
+        <text x="0" y="36" className="fill-slate-600 text-xs">✓ Refusal behaviors</text>
+      </g>
+
+      <g transform="translate(130, 90)">
+        <text x="0" y="0" className="fill-slate-600 text-xs">✓ Output filtering</text>
+        <text x="0" y="18" className="fill-slate-600 text-xs">✓ Prompt injection defense</text>
+        <text x="0" y="36" className="fill-slate-600 text-xs">✓ Guardrails</text>
+      </g>
+    </g>
+
+    {/* Plus sign */}
+    <g transform="translate(325, 110)">
+      <circle cx="25" cy="25" r="20" fill="#f1f5f9" stroke="#cbd5e1" strokeWidth="2"/>
+      <text x="25" y="32" textAnchor="middle" className="fill-slate-500 text-xl font-bold">+</text>
+    </g>
+
+    {/* Infrastructure Safety side */}
+    <g transform="translate(400, 50)">
+      <rect x="0" y="0" width="250" height="150" rx="16" fill="url(#infraGrad)" opacity="0.1" stroke="#3b82f6" strokeWidth="2"/>
+      <rect x="0" y="0" width="250" height="45" rx="16" fill="url(#infraGrad)"/>
+      <text x="125" y="30" textAnchor="middle" className="fill-white text-sm font-bold">Infrastructure Safety</text>
+
+      <text x="125" y="75" textAnchor="middle" className="fill-slate-700 text-sm font-medium">Network & Runtime</text>
+
+      <g transform="translate(20, 90)">
+        <text x="0" y="0" className="fill-slate-600 text-xs">✓ Zero attack surface</text>
+        <text x="0" y="18" className="fill-slate-600 text-xs">✓ Crypto identity</text>
+        <text x="0" y="36" className="fill-slate-600 text-xs">✓ E2E encryption</text>
+      </g>
+
+      <g transform="translate(130, 90)">
+        <text x="0" y="0" className="fill-slate-600 text-xs">✓ No central trust</text>
+        <text x="0" y="18" className="fill-slate-600 text-xs">✓ Agent isolation</text>
+        <text x="0" y="36" className="fill-slate-600 text-xs">✓ Secure coordination</text>
+      </g>
+    </g>
+
+    {/* Bottom conclusion */}
+    <g transform="translate(175, 215)">
+      <rect x="0" y="0" width="350" height="30" rx="8" fill="#f0fdf4" stroke="#22c55e" strokeWidth="2"/>
+      <text x="175" y="20" textAnchor="middle" className="fill-green-700 text-sm font-bold">= Complete AI Safety Stack</text>
+    </g>
+  </svg>
+)
+
 // Custom SVG: Funding Structure
 const FundingStructureSVG = () => (
   <svg viewBox="0 0 600 200" className="w-full h-auto">
@@ -476,8 +548,31 @@ export default function SeedPage() {
         </div>
       </section>
 
+      {/* Full-Stack Safety Section */}
+      <section className="py-16 px-6 bg-gradient-to-b from-white to-slate-50">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">The Missing Layer</h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              AI safety isn't just model alignment—it's also the infrastructure AI runs on.
+              A perfectly aligned model on compromised infrastructure can still cause harm.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-2xl shadow-lg p-8 border border-slate-200">
+            <FullStackSafetySVG />
+          </div>
+
+          <div className="mt-8 text-center">
+            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+              We're building the infrastructure half of the AI safety stack.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Solution Section */}
-      <section className="py-16 px-6 bg-gradient-to-b from-white to-blue-50">
+      <section className="py-16 px-6 bg-gradient-to-b from-slate-50 to-blue-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Our Solution: subtun0</h2>
